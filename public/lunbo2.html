@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lunbo2.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div class="index_commnet">
+        <div class="index_T">
+            <h1 class="white">世间所有的相遇都是久别重逢</h1>
+            <span class="white">房客和房东都在彼此感动着</span>
+        </div>
+        <div id="box">
+            <div class="box-left">
+                <ul class="fq-one">
+                    <li class="on">
+                       112
+                    </li>
+                    <li>
+                        4545
+                    </li>
+                    <li>
+                        3
+                    </li>
+                    <li>
+                        4
+                    </li>
+                    <li>
+                        5
+                    </li>
+                </ul>
+                <ul class="fq-two">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+            <div class="box-right"></div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+       var w=10;
+        $(".box-left>.fq-one>li").mouseenter(function(){
+        var n=$(this).index();
+        console.log(n);
+        if(w>0){
+            w++;
+            console.log(w);
+        }
+        $(".fq-one").children().eq(n).css("zIndex",w);
+       })
+    </script>
+</body>
+</html>

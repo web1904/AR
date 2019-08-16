@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a id="loginout" href="javascript:;" class="fa fa-sign-out">退出登录</a>
+    <script>
+        document.getElementById("loginout").onclick=function(){
+            sessionStorage.removeItem("phone");
+            window.location.reload()
+        }
+    </script>
+</body>
+</html>
